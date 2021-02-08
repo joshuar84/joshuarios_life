@@ -1,0 +1,33 @@
+body {
+    background-color: gray;
+    text-align: center;
+}
+#logo {
+    border-radius: 50%;
+    border: 10px black solid;
+    z-index: 3;
+}
+#banner {
+    position: relative;
+    top: -140px;
+    height: 145px;
+    background-color: black;
+    z-index: -1;
+    border-radius: 25%;
+}
+#name {
+    margin-top: 0em;
+    margin-bottom: 0em;
+    z-index: 2;
+    color: blanchedalmond;
+}
+#title {
+    margin-top: 0em;
+    margin-bottom: 0em;
+    z-index: 2;
+    color: blanchedalmond;
+}
+figure {
+    margin-bottom: 0;
+    z-index: 2;
+}
