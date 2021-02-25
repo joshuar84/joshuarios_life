@@ -1,112 +1,97 @@
+/* Universal Styles */
+:root {
+    --top-offset: 6rem;
+}
 body {
-    position: relative;
-    background-image: url("bamboo-denim.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    text-align: center;
-    height: 100%;
-    
-    
+  background: radial-gradient(
+    circle,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(37, 37, 144, 1) 35%,
+    rgba(255, 68, 0, 1) 100%
+  );
+  text-align: center;
 }
-#pic {
-    position: relative;
-    top: 1.2rem;
-    border-radius: 100%;
-    border: 0.5rem black solid;
-    z-index: 3;
-    height: 140px;
-    width: 140px;
-    
-}
-#banner {
-    position: relative;
-    bottom: 220px;
-    height: 10rem;
-    background-image: url("keyboard.jpg");
-    z-index: -2;
-    border-radius: 25%;
-    border: 0.4em black solid;
-    
-}
-#name {
-    position: relative;
-    bottom: 20px;
-    z-index: 2;
-    color: blanchedalmond;
-    text-shadow: 2px 3px rgb(255, 0, 0);
-    font-size: 370%;
-}
-#title {
-    position: relative;
-    margin: 0 auto;
-    top: 230px;
-    z-index: 2;
-    background-color: black;
-    width: 250px;
-    color: blanchedalmond;
-    text-shadow: 2px 3px rgb(0, 17, 255);
-    font-size: 170%;
-}
-figure {
-    z-index: 2;
-}
+
+/* Nav Bar */
 nav {
-    background-color: black;
-    width: 100%;
-    height: 1.9rem;
-    overflow: auto;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    font-size: 119%;
-}
-nav img {
-    width: 1rem;
-    height: 1rem;
-    align-items: center;
-    justify-items: left;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
 }
 .nav_element {
-    font-size: 100%;
-    color: blanchedalmond;
-    text-decoration: none;
-    width: 20%;
-    text-align: center;
-    justify-content: space-between;
-    align-items: center;
-
+  color: blanchedalmond;
+  text-decoration: none;
+  padding: 0.7rem;
 }
-.div_bar {
+
+/* Banner */
+#banner_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+#banner_section > div {
+  background-image: url("./keyboard.jpg");
+  border: 0.7rem black solid;
+  border-radius: 28px;
+  height: 8rem;
+  position: relative;
+  top: 2.5rem;
+  z-index: -1;
+  flex: 1;
+}
+#banner_section img {
+  position: relative;
+  top: -4.4rem;
+  width: 5.5rem;
+  border: 0.7rem black solid;
+  border-radius: 50%;
+}
+#banner_section #name {
+    position: relative;
+    top: -7.2rem;
+    font-size: 3rem;
+    color: blanchedalmond;
+    text-shadow: 4.2px 3.6px 1.8px red;
+}
+
+/* Main Section */
+#main_body {
+    position: relative;
+    color: blanchedalmond;
+    top: var(--top-offset);
+}
+.cred_container {
+    margin: 0.8rem;
+    border: 0.4rem black solid;
+    border-radius: 28px;
+}
+
+/* Footer */
+footer {
     background-color: black;
     color: blanchedalmond;
-    font-size: 1.7em;
-}
-#home {
     position: relative;
-    bottom: 0.05em;
+    padding: 0.2rem;
+    top: var(--top-offset);
 }
-#logo {
-    position: relative;
-    top: 0.1044em;
-}
-p {
-    width: 18em;
-    margin: 0 auto;
-    font-size: 1.2em;
-    text-shadow: 2px 3px rgb(1, 39, 250);
-    background-color: rgba(5, 247, 255, 0.479);
-    color: navajowhite;
-    border: 6px black solid;
-    border-radius: 15%;
-}
-#profile_pic {
-    clip-path: polygon(0 15%, 100% 15%, 75% 100%, 25% 100%);
-    position: relative;
-    margin: 0 auto;
-    border: 10px black solid;
-    bottom: 90px;
-    z-index: -1;
-}
-header {
-    height: 450px;
+
+/* Media Queries */
+@media screen and (max-width: 697px) {
+    nav {
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 125%;
+      }
+      .nav_element {
+        color: blanchedalmond;
+        text-decoration: none;
+        padding: 0.7rem;
+      }
 }

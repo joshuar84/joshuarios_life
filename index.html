@@ -5,9 +5,12 @@
     <title>Joshua Rios - Full-Stack Engineer</title>
     <link href="style.css" type="text/css" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="circle-cropped-logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
+
+    <!-- Nav Bar -->
     <header id="home">
         <nav>
             <a class="nav_element" href="#home" id="home">HOME</a>
@@ -16,39 +19,55 @@
             <a class="nav_element" href="#experience">EXPERIENCE</a>
             <a class="nav_element" href="#contact">CONTACT</a>
         </nav>
-        <figure>
-            <img id="pic" src="logo_bamboo.jpg">
-        </figure>
-        <h1 id="name">Joshua Rios</h1>
-        <h1 id="title">Full-Stack Engineer</h1>
-        <div id="banner"></div>
     </header>
-    <figure>
-        <img id="profile_pic" src="profile_pic_2.jpg">
-    </figure>
-    <section id="about_me">
-        <div class="div_bar">
-            <h4>About Me</h4>
+
+    <!-- Banner -->
+    <section id="banner_section">
+        <div>
+            <div id="banner">
+                <figure>
+                    <img id="pic" src="logo_bamboo.jpg">
+                </figure>
+                <h1 id="name">Joshua Rios</h1>
+            </div>
         </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, unde voluptate nostrum quia sit
-            perspiciatis officiis adipisci illo! Libero dolor, omnis totam minus exercitationem deleniti reiciendis.
-            Possimus magnam doloremque tempore?</p>
     </section>
-    <section id="training">
-        <div class="div_bar">
-            <h4>Training</h4>
-        </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, atque non, odit quae officia, aut soluta
-            laboriosam a sunt ipsa molestiae nam possimus! Voluptas numquam quae doloribus ipsam minus est!</p>
-    </section>
-    <section id="experience">
-        <div class="div_bar">
-            <h4>Experience</h4>
-        </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore mollitia rem dolorem aliquid labore officiis
-            deleniti fugiat magnam voluptate sunt voluptatum aspernatur esse ipsum ducimus reprehenderit quia
-            voluptatem, veritatis earum.</p>
-    </section>
+
+    <div id="main_body">
+
+        <!-- About Me -->
+        <section class="cred_container" id="about_me">
+            <div class="div_bar">
+                <h4>About Me</h4>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, unde voluptate nostrum quia sit
+                perspiciatis officiis adipisci illo! Libero dolor, omnis totam minus exercitationem deleniti reiciendis.
+                Possimus magnam doloremque tempore?</p>
+        </section>
+
+        <!-- Training -->
+        <section class="cred_container" id="training">
+            <div class="div_bar">
+                <h4>Training</h4>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, atque non, odit quae officia, aut soluta
+                laboriosam a sunt ipsa molestiae nam possimus! Voluptas numquam quae doloribus ipsam minus est!</p>
+        </section>
+
+        <!-- Experience -->
+        <section class="cred_container" id="experience">
+            <div class="div_bar">
+                <h4>Experience</h4>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore mollitia rem dolorem aliquid labore
+                officiis
+                deleniti fugiat magnam voluptate sunt voluptatum aspernatur esse ipsum ducimus reprehenderit quia
+                voluptatem, veritatis earum.</p>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
     <footer id="contact" class="div_bar">
         <h4>Contact</h4>
     </footer>
