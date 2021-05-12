@@ -40,7 +40,7 @@ nav {
   margin: 1rem;
 }
 #banner_section > div {
-  background-image: url("./keyboard.jpg");
+  background-image: url("../images/keyboard.jpg");
   border: 0.7rem black solid;
   border-radius: 28px;
   height: 8rem;
