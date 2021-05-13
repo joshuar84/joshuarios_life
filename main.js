@@ -1,0 +1,1 @@
+alert('Welcome to my page.\nNote: This site is under construction.\nClick "OK" to proceed.');
